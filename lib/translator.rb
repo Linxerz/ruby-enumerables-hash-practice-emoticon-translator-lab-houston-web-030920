@@ -10,7 +10,7 @@ def load_library(path)
     emoticons[get_meaning] << value
     emoticons[get_emoticon] << value
   end
-
+  emoticons
 end
 
 def get_japanese_emoticon
