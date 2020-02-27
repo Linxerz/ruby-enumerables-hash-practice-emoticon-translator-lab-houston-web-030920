@@ -6,11 +6,11 @@ def load_library(path)
 
   hash = {}
 
-  hash[:get_meaning] = []
-  hash[:get_emoticon] = []
+  hash[:get_meaning] = {}
+  hash[:get_emoticon] = {}
   emoticons.each do |key,value|
-    hash[:get_meaning] << value
-    hash[:get_emoticon] << value
+    hash[:get_meaning] = value
+    hash[:get_emoticon] = value
   end
   hash
 end
