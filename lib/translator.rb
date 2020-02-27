@@ -22,7 +22,7 @@ def get_japanese_emoticon(path,emoji)
     return "Sorry, that emoticon was not found"
   end
   hash[:get_emoticon][emoji]
-  
+
 end
 
 def get_english_meaning
