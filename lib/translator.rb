@@ -9,8 +9,8 @@ def load_library(path)
   hash[:get_meaning] = []
   hash[:get_emoticon] = []
   emoticons.each do |key,value|
-    emoticons[:get_meaning] << value
-    emoticons[:get_emoticon] << value
+    hash[:get_meaning] << value
+    hash[:get_emoticon] << value
   end
   hash
 end
