@@ -15,8 +15,9 @@ def load_library(path)
   pp hash
 end
 
-def get_japanese_emoticon
-
+def get_japanese_emoticon(path,emoji)
+  hash = load_library(path)
+  hash[emoji]
 end
 
 def get_english_meaning
