@@ -18,7 +18,7 @@ end
 def get_japanese_emoticon(path,emoji)
   hash = load_library(path)
 
-  if hash[:get_emoticon][emoji] != false
+  if hash[:get_emoticon][emoji] != nil
     return hash[:get_emoticon][emoji]
   end
 
