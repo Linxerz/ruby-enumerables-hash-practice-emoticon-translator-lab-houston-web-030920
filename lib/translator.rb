@@ -17,7 +17,12 @@ end
 
 def get_japanese_emoticon(path,emoji)
   hash = load_library(path)
-  hash[:get_emoticon][emoji]
+  
+  if hash[:get_emoticon][emoji] != false
+    return hash[:get_emoticon][emoji]
+  else
+    puts "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
